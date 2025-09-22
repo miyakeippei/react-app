@@ -260,8 +260,14 @@
           "AppSyncApiName": "reactapp",
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
+          "AuthCognitoUserPoolId": {
+            "Fn::GetAtt": [
+              "authreactappd07e28b1",
+              "Outputs.UserPoolId"
+            ]
+          },
           "S3DeploymentBucket": "amplify-reactapp-dev-e1d42-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/7fbb8dbd93e22f6ec2b3d94b5ac9ce1eee01ab82",
+          "S3DeploymentRootKey": "amplify-appsync-files/edeba99dc467f68947b8f5238f7691c4d1d3bd84",
           "env": "dev"
         }
       }
