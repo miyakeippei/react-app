@@ -15,6 +15,7 @@ function App({ signOut, user }) {
       try {
         //  ログインユーザーの契約番号を取得
         const currentUser = await Auth.currentAuthenticatedUser();
+        
         const contractNumber = currentUser.attributes["custom:contractNumber"];
 
         //  契約番号で契約データを検索
