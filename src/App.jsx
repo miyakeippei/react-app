@@ -18,13 +18,14 @@ function App({signOut,user}) {
         <>
         <h3>{user.username}</h3>
         <button onClick={signOut}>サインアウト</button>
+
+
+
         </>
       ):(
         <h3>権限なし</h3>
       )}
-      <div className="test">towa</div>
-      <div className="test">ippei</div>
-      <div className="test">とわとわ</div>
+
     </>
   )
 }

@@ -15,6 +15,9 @@
       "auth": {
         "reactapp1392214d": {},
         "reactappd07e28b1": {}
+      },
+      "api": {
+        "reactapp": {}
       }
     }
   }

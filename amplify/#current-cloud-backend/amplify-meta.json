@@ -9,7 +9,7 @@
       "UnauthRoleName": "amplify-reactapp-dev-e1d42-unauthRole",
       "StackName": "amplify-reactapp-dev-e1d42",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:458505148446:stack/amplify-reactapp-dev-e1d42/e3454fc0-97c4-11f0-b37a-0a1d4112b62b",
-      "AmplifyAppId": "d2yi8ewvcfdrta"
+      "AmplifyAppId": "dsl8t5isyc5vt"
     }
   },
   "auth": {
@@ -40,7 +40,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactapp-dev-e1d42-deployment/amplify-cfn-templates/auth/reactappd07e28b1-cloudformation-template.json",
         "logicalId": "authreactappd07e28b1"
       },
-      "lastPushTimeStamp": "2025-09-22T16:51:03.508Z",
+      "lastPushTimeStamp": "2025-09-22T17:53:46.286Z",
       "output": {
         "UserPoolId": "ap-northeast-1_BeBL2Fxta",
         "AppClientIDWeb": "3pb9a0hqo30r4pp7h5dlrs3n3p",
@@ -51,6 +51,33 @@
         "UserPoolName": "reactappd07e28b1_userpool_d07e28b1"
       },
       "lastPushDirHash": "mXK7b006eGsmGWaPU3TNerbPySQ="
+    }
+  },
+  "api": {
+    "reactapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "qoky5qdyinaqtjb3ayghdjsrqm",
+        "GraphQLAPIEndpointOutput": "https://b6hv3kgsp5erbclgkxiuv5v4o4.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-jpu2iba4wjegpeptujsxj7tfb4"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactapp-dev-e1d42-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apireactapp"
+      },
+      "lastPushTimeStamp": "2025-09-22T17:53:48.760Z",
+      "lastPushDirHash": "D2AhYBkWWYQ0Onx51/3+265Uji0="
     }
   }
 }
